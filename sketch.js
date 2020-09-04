@@ -5,7 +5,7 @@ const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 
 var box ;
-var paper;
+var ground1;
 var ball ;
 
 function preload()
@@ -19,8 +19,8 @@ function setup() {
 	world = engine.world;
 
 	//Create the Bodies Here.
-box = new box(300,200,20,20)
-paper = new paper(300,200,10,10)
+box = new Box(300,200,20,20)
+ground1 = new ground(400,680,800,10)
 ball = new Ball(200,200,10)
 	Engine.run(engine);
   
@@ -32,7 +32,7 @@ function draw() {
   background(0);
   
 box.display();
-paper.display();
+ground1.display();
 ball.display();
 
 

@@ -17,7 +17,7 @@ class Ball{
       angleMode(RADIANS)
       rotate(angle)
       fill("green")
-      ellipse(0,0,this,radius)
+      ellipse(0,0,this.radius)
       pop()
   }
 }
